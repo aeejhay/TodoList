@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="user-info">
+                <h3 id="userName">Welcome, User</h3>
+                <button id="logoutBtn" class="btn">Logout</button>
+            </div>
+            
+            <div class="categories">
+                <h3>Categories</h3>
+                <form id="addCategoryForm">
+                    <input type="text" id="categoryName" placeholder="New category name" required>
+                    <button type="submit" class="btn">Add Category</button>
+                </form>
+                <ul id="categoryList">
+                    <!-- Categories will be loaded here -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="tasks-container">
+                <h2 id="selectedCategory">Select a Category</h2>
+                <button id="openAddTaskBtn" class="btn">Add Task</button>
+                
+                <!-- Popup Form -->
+                <div id="taskFormPopup" class="popup-overlay hidden">
+                    <div class="popup-content">
+                        <form id="addTaskForm">
+                            <h3>Add New Task</h3>
+                            <input type="text" id="taskName" placeholder="Task title" required>
+                            <textarea id="taskDescription" placeholder="Task description"></textarea>
+                            <input type="date" id="taskDueDate">
+                            <div class="popup-buttons">
+                                <button type="submit" class="btn">Add Task</button>
+                                <button type="button" class="btn btn-cancel" id="closePopupBtn">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="tasksList">
+                    <!-- Tasks will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
