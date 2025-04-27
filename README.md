@@ -25,23 +25,41 @@ A full-stack web application built with HTML, CSS, and JavaScript, featuring use
 ## 📁 Folder Structure
 
 project-root/
-│ ├── frontend/ 
+
+│ ├── frontend/
+
 │ ├── index.html 
+
 │ ├── dashboard.html 
+
 │ ├── login.html 
+
 │ ├── register.html 
+
 │ └── styles/ 
+
 │ └── main.css 
+
 │ ├── backend/ 
+
 │ ├── login.php 
+
 │ ├── register.php
+
 │ ├── verify_email.php
+
 │ ├── create_task.php
+
 │ ├── create_category.php
+
 │ ├── fetch_tasks.php 
+
 │ └── logout.php
+
 │ ├── config/ 
+
 │ └── db.php 
+
 │ └── README.md
 
 ## 🛠️ Installation
