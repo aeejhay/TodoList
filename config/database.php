@@ -1,7 +1,7 @@
 <?php
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'cL0Efi5Cajee!');
+define('DB_PASSWORD', 'YOURPASSWORD');
 define('DB_NAME', 'todolist_db');
 
 // Attempt to connect to MySQL database
